@@ -11,22 +11,5 @@
         DisplayName="New Employee Orientation"
         Description="Orientation information about new employees"
         Image="/_layouts/15/images/itgen.png"/>
-  <ListInstance Title="New Employees In Seattle">
-    <Data>
-      <Rows>
-        <Row>
-          <Field Name="Title">Tom Higginbotham</Field>
-        </Row>
-        <Row>
-          <Field Name="Title">Satomi Hayakawa</Field>
-        </Row>
-        <Row>
-          <Field Name="Title">Cassi Hicks</Field>
-        </Row>
-        <Row>
-          <Field Name="Title">Lertchai Treetawatchaiwong</Field>
-        </Row>
-      </Rows>
-    </Data>
-  </ListInstance>
+  <ListInstance Title="New Employees In Seattle"></ListInstance>
 </Elements>

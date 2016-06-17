@@ -41,8 +41,12 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Content Types\NewEmployee\Elements.xml" />
     <Content Include="Site Columns\Division\Elements.xml" />
     <Content Include="Site Columns\OrientationStage\Elements.xml" />
+    <None Include="Content Types\NewEmployee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b67a80a6-b7ac-4fc5-b0fd-fe8b248af099}</SharePointProjectItemId>
+    </None>
     <None Include="Lists\NewEmployeeOrientation\NewEmployeesInSeattle\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{95dd8048-3012-42e9-a6d1-554ef29d40b3}</SharePointProjectItemId>
     </None>

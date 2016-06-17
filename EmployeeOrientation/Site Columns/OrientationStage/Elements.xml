@@ -22,7 +22,7 @@
       <MAPPING Value="3">HR paperwork</MAPPING>
       <MAPPING Value="4">Corp network access</MAPPING>
       <MAPPING Value="5">Completed</MAPPING>
-    </MAPPINGS>
+    </MAPPINGS>Content 
     <Default>Not Started</Default>
   </Field>
 </Elements>
