@@ -29,9 +29,8 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
     <div>
-        <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/NewEmployeesInSeattle/AllItems.aspx';" 
-    Text="New Employees in Seattle" /></p>
+        <p><WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" 
+      ID="HomePage1" Title="loc:full" /></p>
     </div>
 
 </asp:Content>
