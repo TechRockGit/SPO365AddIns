@@ -44,6 +44,8 @@
     <Content Include="Content Types\NewEmployee\Elements.xml" />
     <Content Include="Site Columns\Division\Elements.xml" />
     <Content Include="Site Columns\OrientationStage\Elements.xml" />
+    <Content Include="Lists\WorkflowHistoryList\Elements.xml" />
+    <Content Include="Lists\WorkflowTaskList\Elements.xml" />
     <None Include="Content Types\NewEmployee\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b67a80a6-b7ac-4fc5-b0fd-fe8b248af099}</SharePointProjectItemId>
     </None>
@@ -67,6 +69,15 @@
     </None>
     <None Include="Site Columns\OrientationStage\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c4be3d0e-d137-431c-848e-d08546258a0c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea5ae4c1-c124-4611-a473-8fd782ab7aaf}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\HR_Intake\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c33b9bb-cbad-49fb-966e-607ffece0daf}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77ce9769-d63d-422c-92f4-5bb18d7606ba}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +126,28 @@
     <AppManifestFile Include="AppManifest.xml">
       <SubType>Designer</SubType>
     </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflows\HR_Intake\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
